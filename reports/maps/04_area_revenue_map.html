@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27405ea5c7ec6356e9d0b865dbef5fec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_27405ea5c7ec6356e9d0b865dbef5fec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_27405ea5c7ec6356e9d0b865dbef5fec = L.map(
+                "map_27405ea5c7ec6356e9d0b865dbef5fec",
+                {
+                    center: [31.9539, 35.9106],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_259f5744e8f99c2b5280d7f88b73bf97 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_259f5744e8f99c2b5280d7f88b73bf97.addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+            var circle_marker_94e47f2af3f6db8fcf61d258a032cdaf = L.circleMarker(
+                [31.96, 35.91],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.526400000000001, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_b0bd1c20572b22449df0717e2b2e85ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edcf3ed2ff35983bd511be5649cec5a4 = $(`<div id="html_edcf3ed2ff35983bd511be5649cec5a4" style="width: 100.0%; height: 100.0%;">Area: Abdali<br>Revenue: 19579.20 JOD<br>Trips: 3,329<br>Avg Fare: 5.88 JOD</div>`)[0];
+                popup_b0bd1c20572b22449df0717e2b2e85ec.setContent(html_edcf3ed2ff35983bd511be5649cec5a4);
+            
+        
+
+        circle_marker_94e47f2af3f6db8fcf61d258a032cdaf.bindPopup(popup_b0bd1c20572b22449df0717e2b2e85ec)
+        ;
+
+        
+    
+    
+            circle_marker_94e47f2af3f6db8fcf61d258a032cdaf.bindTooltip(
+                `<div>
+                     Abdali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd3b9829b615912550dcb60df73eb7ff = L.circleMarker(
+                [31.83, 35.9],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_605c794519feb2abdb2dc526007b1cb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_321733a679a9e1c3468cf09cb5dfbc9f = $(`<div id="html_321733a679a9e1c3468cf09cb5dfbc9f" style="width: 100.0%; height: 100.0%;">Area: Airport Road<br>Revenue: 13225.77 JOD<br>Trips: 1,301<br>Avg Fare: 10.17 JOD</div>`)[0];
+                popup_605c794519feb2abdb2dc526007b1cb6.setContent(html_321733a679a9e1c3468cf09cb5dfbc9f);
+            
+        
+
+        circle_marker_dd3b9829b615912550dcb60df73eb7ff.bindPopup(popup_605c794519feb2abdb2dc526007b1cb6)
+        ;
+
+        
+    
+    
+            circle_marker_dd3b9829b615912550dcb60df73eb7ff.bindTooltip(
+                `<div>
+                     Airport Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a479417b48b354a5b52eb9733f9915c4 = L.circleMarker(
+                [31.98, 35.82],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_6fe8dc0eab92fbddaa26a711cf0cd70c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0c68ca7d76d5e16ef90682f5b11bd14 = $(`<div id="html_f0c68ca7d76d5e16ef90682f5b11bd14" style="width: 100.0%; height: 100.0%;">Area: City Mall Area<br>Revenue: 10331.36 JOD<br>Trips: 1,251<br>Avg Fare: 8.26 JOD</div>`)[0];
+                popup_6fe8dc0eab92fbddaa26a711cf0cd70c.setContent(html_f0c68ca7d76d5e16ef90682f5b11bd14);
+            
+        
+
+        circle_marker_a479417b48b354a5b52eb9733f9915c4.bindPopup(popup_6fe8dc0eab92fbddaa26a711cf0cd70c)
+        ;
+
+        
+    
+    
+            circle_marker_a479417b48b354a5b52eb9733f9915c4.bindTooltip(
+                `<div>
+                     City Mall Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_769578c729e380318b94715ee62b27cc = L.circleMarker(
+                [31.95, 35.93],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.361823333333334, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_efadd4d02e3336ae76498fd13860c4a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_860adc4603ffb219e3c69a649ca683d7 = $(`<div id="html_860adc4603ffb219e3c69a649ca683d7" style="width: 100.0%; height: 100.0%;">Area: Downtown<br>Revenue: 19085.47 JOD<br>Trips: 2,939<br>Avg Fare: 6.49 JOD</div>`)[0];
+                popup_efadd4d02e3336ae76498fd13860c4a5.setContent(html_860adc4603ffb219e3c69a649ca683d7);
+            
+        
+
+        circle_marker_769578c729e380318b94715ee62b27cc.bindPopup(popup_efadd4d02e3336ae76498fd13860c4a5)
+        ;
+
+        
+    
+    
+            circle_marker_769578c729e380318b94715ee62b27cc.bindTooltip(
+                `<div>
+                     Downtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58c4fe83637af64200dec4a5d9d66c1e = L.circleMarker(
+                [31.95, 35.92],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_c68767540a12d60f05a2f92459fd1883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7909be3ec738a3fcda30be8f8f90b569 = $(`<div id="html_7909be3ec738a3fcda30be8f8f90b569" style="width: 100.0%; height: 100.0%;">Area: Jabal Amman<br>Revenue: 15401.35 JOD<br>Trips: 2,466<br>Avg Fare: 6.25 JOD</div>`)[0];
+                popup_c68767540a12d60f05a2f92459fd1883.setContent(html_7909be3ec738a3fcda30be8f8f90b569);
+            
+        
+
+        circle_marker_58c4fe83637af64200dec4a5d9d66c1e.bindPopup(popup_c68767540a12d60f05a2f92459fd1883)
+        ;
+
+        
+    
+    
+            circle_marker_58c4fe83637af64200dec4a5d9d66c1e.bindTooltip(
+                `<div>
+                     Jabal Amman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0529054b0a36d3eb5f701f52da0f0d7 = L.circleMarker(
+                [31.99, 35.86],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_4adc2dec38a74e392279da24876f5151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96b123104dc0495fdb523ebef567b416 = $(`<div id="html_96b123104dc0495fdb523ebef567b416" style="width: 100.0%; height: 100.0%;">Area: Khalda<br>Revenue: 15369.80 JOD<br>Trips: 2,248<br>Avg Fare: 6.84 JOD</div>`)[0];
+                popup_4adc2dec38a74e392279da24876f5151.setContent(html_96b123104dc0495fdb523ebef567b416);
+            
+        
+
+        circle_marker_d0529054b0a36d3eb5f701f52da0f0d7.bindPopup(popup_4adc2dec38a74e392279da24876f5151)
+        ;
+
+        
+    
+    
+            circle_marker_d0529054b0a36d3eb5f701f52da0f0d7.bindTooltip(
+                `<div>
+                     Khalda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a7fced9caaba26c8931bcb13bba272a = L.circleMarker(
+                [31.89, 35.88],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_110078f26470d6327e58ff026f28be48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77b46bd49ce8c13aea8efce3b751d33e = $(`<div id="html_77b46bd49ce8c13aea8efce3b751d33e" style="width: 100.0%; height: 100.0%;">Area: Madaba Road<br>Revenue: 9875.44 JOD<br>Trips: 1,284<br>Avg Fare: 7.69 JOD</div>`)[0];
+                popup_110078f26470d6327e58ff026f28be48.setContent(html_77b46bd49ce8c13aea8efce3b751d33e);
+            
+        
+
+        circle_marker_3a7fced9caaba26c8931bcb13bba272a.bindPopup(popup_110078f26470d6327e58ff026f28be48)
+        ;
+
+        
+    
+    
+            circle_marker_3a7fced9caaba26c8931bcb13bba272a.bindTooltip(
+                `<div>
+                     Madaba Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8705759bc338e10253450f40a5be49ad = L.circleMarker(
+                [31.98, 36.0],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_5f7f949d68b20a268c21700aca5d0f0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c81b88bef0dc671ced65f805f4adfab3 = $(`<div id="html_c81b88bef0dc671ced65f805f4adfab3" style="width: 100.0%; height: 100.0%;">Area: Marka<br>Revenue: 12946.30 JOD<br>Trips: 1,589<br>Avg Fare: 8.15 JOD</div>`)[0];
+                popup_5f7f949d68b20a268c21700aca5d0f0e.setContent(html_c81b88bef0dc671ced65f805f4adfab3);
+            
+        
+
+        circle_marker_8705759bc338e10253450f40a5be49ad.bindPopup(popup_5f7f949d68b20a268c21700aca5d0f0e)
+        ;
+
+        
+    
+    
+            circle_marker_8705759bc338e10253450f40a5be49ad.bindTooltip(
+                `<div>
+                     Marka
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6528a798bcb721f27b41ac722e04c21 = L.circleMarker(
+                [31.98, 35.84],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_4760b78fa75057595a5436309fa4ed17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8914f207dd98902807fac49a131a218 = $(`<div id="html_a8914f207dd98902807fac49a131a218" style="width: 100.0%; height: 100.0%;">Area: Mecca Street<br>Revenue: 14569.32 JOD<br>Trips: 2,068<br>Avg Fare: 7.05 JOD</div>`)[0];
+                popup_4760b78fa75057595a5436309fa4ed17.setContent(html_a8914f207dd98902807fac49a131a218);
+            
+        
+
+        circle_marker_f6528a798bcb721f27b41ac722e04c21.bindPopup(popup_4760b78fa75057595a5436309fa4ed17)
+        ;
+
+        
+    
+    
+            circle_marker_f6528a798bcb721f27b41ac722e04c21.bindTooltip(
+                `<div>
+                     Mecca Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c921a7e3375f0e87e598177c617c567 = L.circleMarker(
+                [31.72, 35.99],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.117330000000001, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_bb9e6df8f53672c3dd12ddc49d4f859d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6eeb6168bd3c5c653c04015e3c176ffb = $(`<div id="html_6eeb6168bd3c5c653c04015e3c176ffb" style="width: 100.0%; height: 100.0%;">Area: Queen Alia Airport<br>Revenue: 18351.99 JOD<br>Trips: 946<br>Avg Fare: 19.40 JOD</div>`)[0];
+                popup_bb9e6df8f53672c3dd12ddc49d4f859d.setContent(html_6eeb6168bd3c5c653c04015e3c176ffb);
+            
+        
+
+        circle_marker_7c921a7e3375f0e87e598177c617c567.bindPopup(popup_bb9e6df8f53672c3dd12ddc49d4f859d)
+        ;
+
+        
+    
+    
+            circle_marker_7c921a7e3375f0e87e598177c617c567.bindTooltip(
+                `<div>
+                     Queen Alia Airport
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2b326f542de0122961cf97c52d4034b = L.circleMarker(
+                [31.87, 36.0],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_ef6c9573c44ed4e26b3f0a4e41e618bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_155359bde8ea0b257240349567250063 = $(`<div id="html_155359bde8ea0b257240349567250063" style="width: 100.0%; height: 100.0%;">Area: Sahab<br>Revenue: 9048.34 JOD<br>Trips: 930<br>Avg Fare: 9.73 JOD</div>`)[0];
+                popup_ef6c9573c44ed4e26b3f0a4e41e618bc.setContent(html_155359bde8ea0b257240349567250063);
+            
+        
+
+        circle_marker_a2b326f542de0122961cf97c52d4034b.bindPopup(popup_ef6c9573c44ed4e26b3f0a4e41e618bc)
+        ;
+
+        
+    
+    
+            circle_marker_a2b326f542de0122961cf97c52d4034b.bindTooltip(
+                `<div>
+                     Sahab
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e59209b92a0934120e7c9cde1356a031 = L.circleMarker(
+                [31.96, 35.89],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_9469a3bf1597741dd62ddfebcea01c66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdd4e0ba99af13bc9548239942264d3c = $(`<div id="html_cdd4e0ba99af13bc9548239942264d3c" style="width: 100.0%; height: 100.0%;">Area: Shmeisani<br>Revenue: 17245.19 JOD<br>Trips: 2,900<br>Avg Fare: 5.95 JOD</div>`)[0];
+                popup_9469a3bf1597741dd62ddfebcea01c66.setContent(html_cdd4e0ba99af13bc9548239942264d3c);
+            
+        
+
+        circle_marker_e59209b92a0934120e7c9cde1356a031.bindPopup(popup_9469a3bf1597741dd62ddfebcea01c66)
+        ;
+
+        
+    
+    
+            circle_marker_e59209b92a0934120e7c9cde1356a031.bindTooltip(
+                `<div>
+                     Shmeisani
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac782a91df58843301e63f9d4a8df5bc = L.circleMarker(
+                [31.96, 35.86],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_af4c0ec97548500cc3f4318630412e54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ed2cfeed196086b00222eeb33aa8176 = $(`<div id="html_5ed2cfeed196086b00222eeb33aa8176" style="width: 100.0%; height: 100.0%;">Area: Sweifieh<br>Revenue: 16698.43 JOD<br>Trips: 2,601<br>Avg Fare: 6.42 JOD</div>`)[0];
+                popup_af4c0ec97548500cc3f4318630412e54.setContent(html_5ed2cfeed196086b00222eeb33aa8176);
+            
+        
+
+        circle_marker_ac782a91df58843301e63f9d4a8df5bc.bindPopup(popup_af4c0ec97548500cc3f4318630412e54)
+        ;
+
+        
+    
+    
+            circle_marker_ac782a91df58843301e63f9d4a8df5bc.bindTooltip(
+                `<div>
+                     Sweifieh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67125f2129c4351f3e24605d44ead349 = L.circleMarker(
+                [32.02, 35.92],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_ed39c20e21ba264885ac6fba8eb8aaa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b311ac3eb773b61369f3e84ddbcbdec = $(`<div id="html_5b311ac3eb773b61369f3e84ddbcbdec" style="width: 100.0%; height: 100.0%;">Area: Tabarbour<br>Revenue: 14259.37 JOD<br>Trips: 1,815<br>Avg Fare: 7.86 JOD</div>`)[0];
+                popup_ed39c20e21ba264885ac6fba8eb8aaa2.setContent(html_5b311ac3eb773b61369f3e84ddbcbdec);
+            
+        
+
+        circle_marker_67125f2129c4351f3e24605d44ead349.bindPopup(popup_ed39c20e21ba264885ac6fba8eb8aaa2)
+        ;
+
+        
+    
+    
+            circle_marker_67125f2129c4351f3e24605d44ead349.bindTooltip(
+                `<div>
+                     Tabarbour
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9881ebb767ac2f9fec8588617a7e4c1b = L.circleMarker(
+                [32.02, 35.87],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27405ea5c7ec6356e9d0b865dbef5fec);
+        
+    
+        var popup_8a466759529eb6f71a0320ea6a64fc20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1de0be4a2e150c53fd365544a366cbbd = $(`<div id="html_1de0be4a2e150c53fd365544a366cbbd" style="width: 100.0%; height: 100.0%;">Area: University Street<br>Revenue: 17468.63 JOD<br>Trips: 2,331<br>Avg Fare: 7.49 JOD</div>`)[0];
+                popup_8a466759529eb6f71a0320ea6a64fc20.setContent(html_1de0be4a2e150c53fd365544a366cbbd);
+            
+        
+
+        circle_marker_9881ebb767ac2f9fec8588617a7e4c1b.bindPopup(popup_8a466759529eb6f71a0320ea6a64fc20)
+        ;
+
+        
+    
+    
+            circle_marker_9881ebb767ac2f9fec8588617a7e4c1b.bindTooltip(
+                `<div>
+                     University Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
