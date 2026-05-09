@@ -11,7 +11,7 @@ st.set_page_config(
     page_title="Amman Ride Demand",
     page_icon="🚖",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"
 )
 
 # =========================
@@ -45,7 +45,9 @@ html, body, [class*="css"] {
 }
 
 /* Hide streamlit branding */
-#MainMenu, footer, header {visibility: hidden;}
+#MainMenu, footer {visibility: hidden;}
+
+
 
 /* Sidebar */
 [data-testid="stSidebar"] {
